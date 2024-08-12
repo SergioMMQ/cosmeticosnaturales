@@ -1,0 +1,97 @@
+:root{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #edfcff;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+header{
+	width: 100%;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+  }
+
+h1{
+	padding: 0;
+	margin: 0;
+}
+h4{
+	padding: 0;
+	margin: 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+}
+
+a{ 
+	margin-right: 5px;
+}
+
+/* main */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+.title-products{
+	margin: 10px;
+	text-align: center;
+}
+
+  .box {
+	background-color: steelblue;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+	transform: translateX(400%);
+	transition: transform 0.4s ease;
+	margin: 10px;
+  }
+
+  .box-img-1, .box-img-2, .box-img-3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .box-img-1{
+	background-image: url(img/IMG-20240809-WA0051.jpg);
+  }
+  .box-img-2{
+	background-image: url(img/producto1.jpeg);
+  }
+  .box-img-3{
+	background-image: url(img/desodorante.jpg);
+  }
+
+  .box:nth-of-type(even) {
+	transform: translateX(-400%);
+  }
+  
+  .box.show {
+	transform: translateX(0);
+  }
+  
+  .box h2 {
+	font-size: 45px;
+  }
